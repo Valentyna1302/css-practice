@@ -24,7 +24,21 @@ p {
   margin-bottom: 0;
 }
 
-/**-----------------HEADER-------------------*/
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
@@ -36,6 +50,31 @@ p {
 .list {
   list-style-type: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1158px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/**-----------------HEADER-------------------*/
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -111,9 +150,9 @@ p {
   background-color: var(--active-color);
 }
 
-/**-----------------BENEFITS-------------------*/
+/**-----------------VALUES-------------------*/
 
-.benefits-subtitle {
+.values-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -121,7 +160,7 @@ p {
   color: var(--primary-black-color);
 }
 
-.benefits-item-text {
+.values-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
